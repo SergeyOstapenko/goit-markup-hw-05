@@ -103,22 +103,22 @@ h1, h2, h3, h4, p {
     display: flex;
     align-items: center;
     color: var(--title-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-email:hover,
 .header-email:focus {
     color: var(--accent-text-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-icon {
     margin-right: 10px;
     fill: var(--title-text-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-tel:hover,
 .header-tel:focus {
     color: var(--accent-text-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-tel:hover .header-icon,
@@ -127,7 +127,6 @@ h1, h2, h3, h4, p {
 .header-email:focus .header-icon
 {
     fill: var(--accent-text-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* site nav */
@@ -168,12 +167,12 @@ h1, h2, h3, h4, p {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:hover, 
 .header-link:focus {
     color: var(--accent-text-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link.current {
@@ -442,18 +441,21 @@ h1, h2, h3, h4, p {
     height: 44px;
     border-radius: 50%;
     fill: var(--icon-fill);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-content-link:hover,
 .team-content-link:focus{
     background-color: var(--accent-text-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-content-link:hover .team-icon,
 .team-content-link:focus .team-icon {
-    fill: var(--icon-hover);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: var(--icon-hover);  
 }
 
 
@@ -486,12 +488,11 @@ h1, h2, h3, h4, p {
 .portfolio-link {
     display: block;
     width: 370px;
-   
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-link:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .img-wrapper {
@@ -571,12 +572,12 @@ h1, h2, h3, h4, p {
 
     background-color: var(--accent-text-color);
     color: var(--primary-bg-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button.primery:hover,
 .button.primery:focus {
-    background-color: var(--btn-hover-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--btn-hover-color); 
 }
 
 .button-list {
@@ -594,6 +595,7 @@ h1, h2, h3, h4, p {
 .button.secondary {
     padding: 6px 22px;
     background-color: var(--secondary-bg-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -601,8 +603,7 @@ h1, h2, h3, h4, p {
 .button.secondary:focus {
     background-color: var(--accent-text-color);
     color: var(--primary-bg-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);   
 }
 
 /* Clients */
@@ -634,19 +635,22 @@ h1, h2, h3, h4, p {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     fill: var(--icon-fill);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
 .clients-link:focus {
-    border-color: var(--accent-text-color);
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-color: var(--accent-text-color); 
+}
+
+.clients-icon {
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover .clients-icon, 
 .clients-link:focus .clients-icon {
     fill: var(--accent-text-color);
-    border-color: var(--accent-text-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-color: var(--accent-text-color); 
 }
 
 
@@ -662,7 +666,6 @@ h1, h2, h3, h4, p {
 .footer-container {
     display: flex;
     align-items: baseline;
-
 }
 
 .footer-logo {
@@ -743,11 +746,11 @@ h1, h2, h3, h4, p {
     background: rgba(255, 255, 255, 0.1);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     fill: var(--primary-bg-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus {
     background-color: var(--btn-hover-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
